@@ -1,1 +1,24 @@
+Project 1 Documentation
+Yinka Badmus
+
+Implemented Classes & Methods
+-Vector2 class, implemented to carry out vector functionalities such as add, subtract, dot product and normalize
+-SteeringController, implemented to have a parent class that the AI car could use in each scenario
+-SteeringBehavior, abstract class that is implemented by Seek, Arrive and WallAvoidSeek
+-rayCast method, implemented to create a cast to tell if car would collide with an object that is not a car
+
+Project Tasks
+
+Seek
+-In Seek, I followed the code provided in class and computed the acceleration by finding the distance vector
+ and normalizing it then multiplying it by the maxAcceleration
+
+Arrive
+-In Arrive, I also followed the given guideline code and computed the distance then check when the distance is less than the slowRadius
+ of the marker, then decelerate to a speed that gets the car to stop exactly on the marker
+
+WallAvoidSeek
+-In this steering behavior, I first found the seek acceleration then called the rayCast to see if the car was going to collide
+ with an obstacle, if it was then found the position that would collide and implemented a flee algorithm. Then i added the flee
+ acceleration and the seek acceleration.
 
