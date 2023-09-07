@@ -1,0 +1,13 @@
+/* add any CSS styles you want here */
+table {
+    border: 5px solid black;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+}
+
+.alive {
+    background-color: gray;
+}
